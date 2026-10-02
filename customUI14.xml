@@ -1,0 +1,193 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+          onLoad="RibbonOnLoad">
+
+  <ribbon>
+
+    <tabs>
+
+      <tab id="tabYouzhiKit"
+           label="Youzhi Kit">
+
+
+        <!-- ====================================== -->
+        <!-- 文字 -->
+        <!-- ====================================== -->
+
+        <group id="grpText"
+               label="文字">
+
+          <button id="btnStandardText"
+                  label="标准字体"
+                  size="large"
+                  onAction="Ribbon_StandardText"
+                  screentip="标准字体"
+                  supertip="微软雅黑 / Times New Roman，18磅，黑色，加粗，无背景。"/>
+
+          <button id="btnEmphasisText"
+                  label="强调字体"
+                  size="large"
+                  onAction="Ribbon_EmphasisText"
+                  screentip="强调字体"
+                  supertip="微软雅黑 / Times New Roman，24磅，#C00000，加粗，无背景。"/>
+
+          <button id="btnListText"
+                  label="列表字体"
+                  size="large"
+                  onAction="Ribbon_ListText"
+                  screentip="列表字体"
+                  supertip="18磅黑色加粗文字，并添加空心方形项目符号。"/>
+
+          <button id="btnConclusion"
+                  label="结论字体"
+                  size="large"
+                  onAction="Ribbon_Conclusion"
+                  screentip="结论字体"
+                  supertip="24磅白色文字，#2E54A1背景，居中。"/>
+
+        </group>
+
+
+
+        <!-- ====================================== -->
+        <!-- 图片 -->
+        <!-- ====================================== -->
+
+        <group id="grpPicture"
+               label="图片">
+
+          <button id="btnPictureShadow"
+                  label="加阴影"
+                  size="large"
+                  onAction="Ribbon_PictureShadow"
+                  screentip="图片加阴影"
+                  supertip="0.75磅 #E6E6E6 边线，并添加外部左下阴影。"/>
+
+          <button id="btnWhitePictureBorder"
+                  label="白底图片"
+                  size="large"
+                  onAction="Ribbon_WhitePictureBorder"
+                  screentip="白底图片边框"
+                  supertip="0.75磅黑色边框，无阴影。"/>
+
+        </group>
+
+
+
+        <!-- ====================================== -->
+        <!-- 方框 -->
+        <!-- ====================================== -->
+
+        <group id="grpBox"
+               label="方框">
+
+          <button id="btnRedDashedBox"
+                  label="红色虚线框"
+                  onAction="Ribbon_RedDashedBox"
+                  screentip="红色虚线方框"
+                  supertip="#C00000，4磅，虚线，无填充。"/>
+
+          <button id="btnRedSolidBox"
+                  label="红色实线框"
+                  onAction="Ribbon_RedSolidBox"
+                  screentip="红色实线方框"
+                  supertip="#C00000，4磅，实线，无填充。"/>
+
+          <button id="btnBlueDashedBox"
+                  label="蓝色虚线框"
+                  onAction="Ribbon_BlueDashedBox"
+                  screentip="蓝色虚线方框"
+                  supertip="#2E54A1，4磅，虚线，无填充。"/>
+
+          <button id="btnBlackDashedBox"
+                  label="黑色虚线框"
+                  onAction="Ribbon_BlackDashedBox"
+                  screentip="黑色虚线方框"
+                  supertip="黑色，4磅，虚线，无填充。"/>
+
+        </group>
+
+
+
+        <!-- ====================================== -->
+        <!-- 直线 -->
+        <!-- ====================================== -->
+
+        <group id="grpLine"
+               label="直线">
+
+          <button id="btnBlackDashedLine"
+                  label="黑色虚线"
+                  onAction="Ribbon_BlackDashedLine"
+                  screentip="黑色虚线"
+                  supertip="普通直线，黑色，4磅，虚线。"/>
+
+          <button id="btnBlackSolidLine"
+                  label="黑色实线"
+                  onAction="Ribbon_BlackSolidLine"
+                  screentip="黑色实线"
+                  supertip="普通直线，黑色，4磅，实线。"/>
+
+          <button id="btnGrayDashedLine"
+                  label="灰色虚线"
+                  onAction="Ribbon_GrayDashedLine"
+                  screentip="灰色虚线"
+                  supertip="普通直线，#D9D9D9，1磅，虚线。"/>
+
+          <button id="btnGraySolidLine"
+                  label="灰色实线"
+                  onAction="Ribbon_GraySolidLine"
+                  screentip="灰色实线"
+                  supertip="普通直线，#D9D9D9，4磅，实线。"/>
+
+        </group>
+
+
+
+        <!-- ====================================== -->
+        <!-- 箭头 -->
+        <!-- ====================================== -->
+
+        <group id="grpArrow"
+               label="箭头">
+
+          <button id="btnRedArrow"
+                  label="红色箭头"
+                  size="large"
+                  onAction="Ribbon_RedArrow"
+                  screentip="红色箭头"
+                  supertip="#C00000，4磅，末端中等单向箭头。"/>
+
+          <button id="btnBlueArrow"
+                  label="蓝色箭头"
+                  size="large"
+                  onAction="Ribbon_BlueArrow"
+                  screentip="蓝色箭头"
+                  supertip="#2E54A1，4磅，末端中等单向箭头。"/>
+
+        </group>
+
+
+
+        <!-- ====================================== -->
+        <!-- 工具 -->
+        <!-- ====================================== -->
+
+        <group id="grpTools"
+               label="工具">
+
+          <button id="btnTest"
+                  label="测试"
+                  onAction="Ribbon_Test"
+                  screentip="插件测试"
+                  supertip="检查Ribbon和VBA连接是否正常。"/>
+
+        </group>
+
+
+      </tab>
+
+    </tabs>
+
+  </ribbon>
+
+</customUI>
